@@ -21,7 +21,7 @@ for x in range(2):
 """
 
 # 3 Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка
-
+"""
 def checkCoordinates(first, second):
     if (first + second == 0):
         print('X = 0 and Y = 0, enter other coordinates')
@@ -40,3 +40,22 @@ firstCoordinate = float(input("Enter X: "))
 secondCoordinate = float(input("Enter Y: "))
 
 checkCoordinates(firstCoordinate, secondCoordinate)
+"""
+
+# 4 Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
+
+
+def dotCoordinates(quarter):
+    if quarter == 1:
+        print('x > 0, y > 0')
+    elif quarter == 2:
+        print('x < 0, y > 0')
+    elif quarter == 3:
+        print('x < 0, y < 0')
+    elif quarter == 4:
+        print('x > 0, y < 0')
+    else:
+        print('There are only 4 quarters on the coordinate plane')
+
+userQuarter = int(input('Enter the quarter number: '))
+dotCoordinates(userQuarter)
