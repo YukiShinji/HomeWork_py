@@ -9,7 +9,7 @@ def dayOfTheWeek (userNum):
         print ("this day is not the day of the week ")
 
 print ("Enter the day of the week")
-userNumber = int(input ())
+userNumber = int(input())
 dayOfTheWeek (userNumber)
 """
 # 2 Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат
@@ -19,3 +19,24 @@ for x in range(2):
             for z in range(2):
                 print(x, y, z, (not (x or y or z) == (not x and not y and not z)))
 """
+
+# 3 Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка
+
+def checkCoordinates(first, second):
+    if (first + second == 0):
+        print('X = 0 and Y = 0, enter other coordinates')
+    elif first > 0 and second > 0:
+        print('1 quarter')
+    elif first < 0 and second > 0:
+        print('2 quarter')
+    elif first < 0 and second < 0:
+        print('3 quarter')
+    elif first > 0 and second < 0:
+        print('4 quarter')
+    return (first,second)
+
+print ("Enter the coordinate values")
+firstCoordinate = float(input("Enter X: "))
+secondCoordinate = float(input("Enter Y: "))
+
+checkCoordinates(firstCoordinate, secondCoordinate)
