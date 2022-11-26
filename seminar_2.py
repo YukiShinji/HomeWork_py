@@ -37,3 +37,22 @@ print(listConsequence(userNumber))
 
 # 4 Задайте список из N элементов, заполненных числами из промежутка [-N, N]. Найдите произведение элементов на указанных индексах. Индексы вводятся одной строкой, через пробел
 
+numbers = [-3, -2, -1, 0, 1, 2, 3]
+
+def countNumbers (numbers, newIndexes):
+
+
+
+userIndexes = input('Enter a list of numbers separated by a space: ').split()
+newIndexes = list(map(int, userIndexes))
+countNumbers(numbers,newIndexes)
+
+
+# 5 Реализуйте алгоритм перемешивания списка.
+"""
+import random
+lst = [random.randint(0,10) for i in range(random.randint(5,20))]
+print(f"source list:\n {lst}")
+random.shuffle(lst)
+print(f"list after mixing:\n{lst}")
+"""
