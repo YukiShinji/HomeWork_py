@@ -12,6 +12,7 @@ print ("Enter the day of the week")
 userNumber = int(input())
 dayOfTheWeek (userNumber)
 """
+
 # 2 Напишите программу для. проверки истинности утверждения ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z для всех значений предикат
 """
 for x in range(2):
@@ -43,8 +44,7 @@ checkCoordinates(firstCoordinate, secondCoordinate)
 """
 
 # 4 Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
-
-
+"""
 def dotCoordinates(quarter):
     if quarter == 1:
         print('x > 0, y > 0')
@@ -59,3 +59,16 @@ def dotCoordinates(quarter):
 
 userQuarter = int(input('Enter the quarter number: '))
 dotCoordinates(userQuarter)
+"""
+
+# 5 Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве
+"""
+ax = float(input('Enter the coordinates of point A along the axis x:'))
+ay = float(input('Enter the coordinates of point A along the axis y:'))
+bx = float(input('Enter the coordinates of point B along the axis x:'))
+by = float(input('Enter the coordinates of point B along the axis y:'))
+
+import math
+distans = math.sqrt((ax-bx)**2+(ay-by)**2)
+print(f'Distance between point A to point B = {distans}' )
+"""
