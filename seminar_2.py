@@ -36,17 +36,26 @@ print(listConsequence(userNumber))
 """
 
 # 4 Задайте список из N элементов, заполненных числами из промежутка [-N, N]. Найдите произведение элементов на указанных индексах. Индексы вводятся одной строкой, через пробел
-
-numbers = [-3, -2, -1, 0, 1, 2, 3]
-
-def countNumbers (numbers, newIndexes):
-
-
+"""
+numbers = int(input("Enter number for massive: "))
+newMassive = []
 
 userIndexes = input('Enter a list of numbers separated by a space: ').split()
 newIndexes = list(map(int, userIndexes))
-countNumbers(numbers,newIndexes)
 
+for i in range(-numbers, numbers + 1):
+    newMassive.append(i)
+
+print(newMassive)
+
+count = 1
+list_len = len(newIndexes)
+
+
+if (count < list_len):
+    count *= newMassive[newIndexes-1]
+print("This is summ: ", count)    
+"""
 
 # 5 Реализуйте алгоритм перемешивания списка.
 """
