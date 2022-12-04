@@ -34,3 +34,20 @@ for i in range(len(list)):
 print(list)
 print(list2)
 '''
+
+# 3 Задайте список из вещественных чисел. Напишите программу, которая найдёт разницу между максимальным и минимальным значением дробной части элементов
+'''
+lst = list(map(float, input("Enter numbers separated by a space:\n").split()))
+new_lst = [round(i%1,2) for i in lst if i%1 != 0]
+print(max(new_lst) - min(new_lst))
+'''
+
+# 4 Напишите программу, которая будет преобразовывать десятичное число в двоичное
+'''
+s = ""
+n = int(input("Enter number:\n"))
+while n != 0:
+    s = str(n%2) + s
+    n //=2
+print(s)
+'''
