@@ -1,3 +1,4 @@
+'''
 from sympy import *
 import matplotlib.pyplot as plt
 
@@ -41,3 +42,4 @@ print(solve(0 < func))
 
 print("7. Определить промежутки, на котором f < 0")
 print(solve(func < 0))
+'''
